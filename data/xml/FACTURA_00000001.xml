@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<Factura Version="1.0">
+  <Encabezado>
+    <TipoDocumento>Factura</TipoDocumento>
+    <NumeroControl>00000001</NumeroControl>
+    <FechaEmision>08082025</FechaEmision>
+    <HoraEmision>14.59.48</HoraEmision>
+  </Encabezado>
+  <Emisor>
+    <Nombre>Mi Empresa de Tecnología, C.A.</Nombre>
+    <RIF>J-29876543-2</RIF>
+    <DomicilioFiscal>Av. Libertador, Torre Principal, Piso 10, Oficina 10A, Caracas, Venezuela</DomicilioFiscal>
+  </Emisor>
+  <Receptor>
+    <Nombre>Servicios Creativos Globales, S.R.L.</Nombre>
+    <Identificacion>J-40123456-7</Identificacion>
+    <DomicilioFiscal>Calle La Amargura, Edificio El Sol, Piso 3, Valencia, Venezuela</DomicilioFiscal>
+    <Telefono>0412-9876543</Telefono>
+    <Email>pagos@servicioscreativos.com</Email>
+  </Receptor>
+  <Items>
+    <Item>
+      <Descripcion>Servicio de Consultoría Estratégica</Descripcion>
+      <Cantidad>15</Cantidad>
+      <PrecioUnitario>80.00</PrecioUnitario>
+      <AlicuotaIVA>16.0</AlicuotaIVA>
+      <PrecioTotal>1200.00</PrecioTotal>
+    </Item>
+    <Item>
+      <Descripcion>Licencia de Software 'Creativo PRO'</Descripcion>
+      <Cantidad>2</Cantidad>
+      <PrecioUnitario>450.00</PrecioUnitario>
+      <AlicuotaIVA>16.0</AlicuotaIVA>
+      <PrecioTotal>900.00</PrecioTotal>
+    </Item>
+    <Item>
+      <Descripcion>Capacitación y Formación (Exento de IVA)</Descripcion>
+      <Cantidad>1</Cantidad>
+      <PrecioUnitario>500.00</PrecioUnitario>
+      <AlicuotaIVA>0.0</AlicuotaIVA>
+      <PrecioTotal>500.00</PrecioTotal>
+    </Item>
+  </Items>
+  <Totales>
+    <BaseImponible>2600.00</BaseImponible>
+    <TotalIVA>336.00</TotalIVA>
+    <MontoTotal>2936.00</MontoTotal>
+  </Totales>
+  <ImprentaDigital>
+    <Nombre>Imprenta Digital Autorizada, C.A.</Nombre>
+    <RIF>J-12345678-9</RIF>
+    <Autorizacion>SENIAT-PROV-2024-0001</Autorizacion>
+  </ImprentaDigital>
+</Factura>

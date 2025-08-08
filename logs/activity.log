@@ -1,0 +1,10 @@
+2025-08-08 14:59:48 - INFO - ==================================================
+2025-08-08 14:59:48 - INFO - Iniciando nuevo proceso de facturación de demostración
+2025-08-08 14:59:48 - INFO - Datos de la factura definidos. Procediendo a crear la factura...
+2025-08-08 14:59:48 - INFO - Solicitando nuevo número de control...
+2025-08-08 14:59:48 - INFO - Número de control asignado: 00000001
+2025-08-08 14:59:48 - INFO - Objeto de factura creado para el cliente 'Servicios Creativos Globales, S.R.L.' (ID: J-40123456-7).
+2025-08-08 14:59:48 - INFO - Factura 00000001 generada exitosamente en XML: /app/src/../data/xml/FACTURA_00000001.xml
+2025-08-08 14:59:48 - INFO - Proceso de facturación completado para la factura 00000001.
+2025-08-08 14:59:48 - INFO - Proceso de facturación de demostración finalizado.
+2025-08-08 14:59:48 - INFO - ==================================================
