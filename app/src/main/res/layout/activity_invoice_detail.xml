@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.InvoiceDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/invoiceIdTextView"
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            tools:text="Factura #: 12345" />
+
+        <TextView
+            android:id="@+id/dateTimeTextView"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            tools:text="Emitida el 01/01/2024 a las 14:30:00" />
+
+        <!-- Issuer -->
+        <TextView style="@style/TextAppearance.MaterialComponents.Headline6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Emisor"/>
+        <TextView android:id="@+id/issuerNameTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" tools:text="Mi Empresa C.A."/>
+        <TextView android:id="@+id/issuerRifTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" tools:text="RIF: J-123456789"/>
+        <TextView android:id="@+id/issuerAddressTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" tools:text="Av. Principal, Edificio Central..."/>
+
+        <!-- Receiver -->
+        <TextView style="@style/TextAppearance.MaterialComponents.Headline6" android:layout_marginTop="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Receptor"/>
+        <TextView android:id="@+id/receiverNameTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" tools:text="Cliente Final S.A."/>
+        <TextView android:id="@+id/receiverTaxIdTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" tools:text="RIF: J-987654321"/>
+        <TextView android:id="@+id/receiverAddressTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" tools:text="Av. Secundaria, Edificio Anexo..."/>
+        <TextView android:id="@+id/receiverEmailTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" tools:text="Email: contacto@cliente.com"/>
+
+        <!-- Items -->
+        <TextView style="@style/TextAppearance.MaterialComponents.Headline6" android:layout_marginTop="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Artículos"/>
+        <LinearLayout android:id="@+id/itemsContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <!-- Items will be added here programmatically -->
+        </LinearLayout>
+
+        <!-- Totals -->
+        <TextView style="@style/TextAppearance.MaterialComponents.Headline6" android:layout_marginTop="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Totales"/>
+        <TextView android:id="@+id/baseAmountTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" tools:text="Base Imponible: Bs. 1,000.00"/>
+        <TextView android:id="@+id/vatAmountTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" tools:text="IVA (16%): Bs. 160.00"/>
+        <TextView android:id="@+id/totalAmountTextView" style="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" tools:text="Total a Pagar: Bs. 1,160.00"/>
+
+        <!-- Digital Printer -->
+        <TextView style="@style/TextAppearance.MaterialComponents.Caption" android:layout_marginTop="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Datos de Imprenta Digital"/>
+        <TextView android:id="@+id/printerInfoTextView" style="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" tools:text="Imprenta Digital Fiscal S.A., RIF: J-987654321, Auth: 15062023"/>
+
+        <Button
+            android:id="@+id/sendEmailButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Enviar por Correo" />
+
+    </LinearLayout>
+</ScrollView>
