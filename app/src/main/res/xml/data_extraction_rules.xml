@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- TODO: Add any files/directories you want to back up here -->
+    </cloud-backup>
+    <device-transfer>
+        <!-- TODO: Add any files/directories you want to transfer here -->
+    </device-transfer>
+</data-extraction-rules>
